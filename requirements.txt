@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+jinja2
+python-multipart
+python-dotenv
+pydantic
+pydantic-settings
+email-validator
+passlib[bcrypt]
+PyJWT
+SQLAlchemy
+google-genai
+Pillow
+pytest
+httpx
