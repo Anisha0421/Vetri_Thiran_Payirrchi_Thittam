@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="form-card">
+
+    <h1>
+        Party Budget Planner
+    </h1>
+
+    <form id="partyForm">
+
+        <label>
+            Budget (₹)
+
+            <input
+                name="budget"
+                type="number"
+                min="1"
+                required
+            >
+
+        </label>
+
+
+        <label>
+            Guests
+
+            <input
+                name="guests"
+                type="number"
+                min="1"
+                required
+            >
+
+        </label>
+
+
+        <label>
+            Event type
+
+            <select name="event_type">
+
+                <option>
+                    Birthday
+                </option>
+
+                <option>
+                    Wedding
+                </option>
+
+                <option>
+                    Corporate
+                </option>
+
+                <option>
+                    Family Function
+                </option>
+
+            </select>
+
+        </label>
+
+
+        <label>
+            Venue
+
+            <input
+                name="venue"
+                value="Home"
+            >
+
+        </label>
+
+
+        <label>
+            City
+
+            <input
+                name="city"
+                value="Chennai"
+            >
+
+        </label>
+
+
+        <button class="btn">
+            Generate Plan
+        </button>
+
+    </form>
+
+</div>
+
+
+<div id="results"></div>
+
+{% endblock %}

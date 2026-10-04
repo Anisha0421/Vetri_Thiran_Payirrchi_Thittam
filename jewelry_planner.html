@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="form-card">
+
+    <h1>
+        Jewelry Planner
+    </h1>
+
+    <form
+        id="jewelryForm"
+        enctype="multipart/form-data"
+    >
+
+        <label>
+            Budget (₹)
+
+            <input
+                name="budget"
+                type="number"
+                min="1"
+                required
+            >
+
+        </label>
+
+
+        <label>
+            Occasion
+
+            <input
+                name="occasion"
+                placeholder="Wedding / Party / College function"
+                required
+            >
+
+        </label>
+
+
+        <label>
+            Style
+
+            <input
+                name="style"
+                value="elegant"
+            >
+
+        </label>
+
+
+        <label>
+            Outfit color
+
+            <input
+                name="outfit_color"
+                placeholder="Optional"
+            >
+
+        </label>
+
+
+        <label>
+            Notes
+
+            <textarea
+                name="notes"
+            ></textarea>
+
+        </label>
+
+
+        <label>
+            Outfit image (optional)
+
+            <input
+                name="outfit_image"
+                type="file"
+                accept="image/png,image/jpeg,image/webp"
+            >
+
+        </label>
+
+
+        <button class="btn">
+            Generate Suggestions
+        </button>
+
+    </form>
+
+</div>
+
+
+<div id="results"></div>
+
+{% endblock %}

@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="page-head">
+
+    <p class="eyebrow">
+        YOUR SPACE
+    </p>
+
+    <h1>
+        Dashboard
+    </h1>
+
+    <p id="welcome">
+        Loading...
+    </p>
+
+</section>
+
+
+<section class="grid">
+
+    <a
+        class="card"
+        href="/planner/home"
+    >
+
+        🏠
+
+        <h2>
+            Home
+        </h2>
+
+        <p>
+            Start a room plan.
+        </p>
+
+    </a>
+
+
+    <a
+        class="card"
+        href="/planner/party"
+    >
+
+        🎉
+
+        <h2>
+            Party
+        </h2>
+
+        <p>
+            Build an event budget.
+        </p>
+
+    </a>
+
+
+    <a
+        class="card"
+        href="/planner/jewelry"
+    >
+
+        💎
+
+        <h2>
+            Jewelry
+        </h2>
+
+        <p>
+            Match jewelry to an occasion.
+        </p>
+
+    </a>
+
+</section>
+
+
+<section class="result">
+
+    <h2>
+        Recent plans
+    </h2>
+
+    <div id="recent"></div>
+
+</section>
+
+{% endblock %}

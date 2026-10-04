@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="form-card">
+
+    <h1>
+        Home Interior Planner
+    </h1>
+
+    <form id="homeForm">
+
+        <label>
+            Budget (₹)
+
+            <input
+                name="budget"
+                type="number"
+                min="1"
+                required
+            >
+
+        </label>
+
+
+        <label>
+            Room
+
+            <select name="room_type">
+
+                <option>
+                    Living Room
+                </option>
+
+                <option>
+                    Bedroom
+                </option>
+
+                <option>
+                    Kitchen
+                </option>
+
+            </select>
+
+        </label>
+
+
+        <label>
+            Style
+
+            <input
+                name="style"
+                value="modern"
+            >
+
+        </label>
+
+
+        <label>
+            City
+
+            <input
+                name="city"
+                value="Chennai"
+            >
+
+        </label>
+
+
+        <label>
+            Items JSON (optional)
+
+            <textarea
+                name="items"
+                placeholder='{"Lighting":2,"Furniture":1}'
+            ></textarea>
+
+        </label>
+
+
+        <button class="btn">
+            Generate Plan
+        </button>
+
+    </form>
+
+</div>
+
+
+<div id="results"></div>
+
+{% endblock %}
